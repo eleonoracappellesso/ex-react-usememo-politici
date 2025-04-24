@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useMemo } from "react";
+import Card from "./Card";
 
 function App() {
   const [politicians, setPoliticians] = useState([]);
@@ -32,16 +33,7 @@ function App() {
       />
       <div className="card-grid">
         {filteredPoliticians.map((politician) => (
-          <div key={politician.id} className="card">
-            <img
-              src={politician.image}
-              alt={politician.name}
-              className="card-img"
-            />
-            <h2>{politician.name}</h2>
-            <p className="position">{politician.position}</p>
-            <p className="bio">{politician.biography}</p>
-          </div>
+          <Card key={politician.id} politician={politician} />
         ))}
       </div>
     </div>
