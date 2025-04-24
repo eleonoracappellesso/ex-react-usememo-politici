@@ -24,6 +24,17 @@ h1 {
   border-radius: 8px;
 }
 
+.select-position {
+  display: block;
+  margin: 1rem auto 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  max-width: 300px;
+  width: 100%;
+}
+
 .card-grid {
   display: grid;
   gap: 1.5rem;
